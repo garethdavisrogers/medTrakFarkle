@@ -1,0 +1,137 @@
+img {
+  width: 10vw;
+}
+body {
+  background-color: #335074;
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  padding: 4vw 4vh;
+}
+
+.game-container {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #406492;
+  border-radius: 10px;
+  padding: 4vh 5vw;
+  gap: 4vh;
+}
+/*
+.row {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.dice {
+  display: flex;
+  justify-content: space-around;
+}
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header {
+  height: 100px;
+  max-height: 100%;
+  font-size: 8rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  padding: 6vh 0vw;
+}
+.round,
+.turn {
+  height: 50px;
+  max-height: 100%;
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+}
+
+.score {
+  background-color: rgba(52, 52, 52, 0.3);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  max-height: 100%;
+  text-align: center;
+  width: 40vw;
+  border-radius: 5px;
+}
+.button {
+  background-color: #335074;
+  display: flex;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  text-align: center;
+  min-width: 15vw;
+  height: 10vh;
+  border: none;
+  font-size: 3rem;
+  border-radius: 10px;
+  padding: 2vh 2vw;
+}
+.column {
+  float: left;
+  width: 20%;
+  margin-left: 80px;
+}
+button:hover {
+  color: #335074;
+  background-color: white;
+}
+.roll {
+}
+.roll:hover {
+}
+.bank {
+}
+.bank:hover {
+}
+.transparent {
+  /*For dice that are selected*/
+  opacity: 0.75;
+}
+
+.button-container > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-menu {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+}
+.go-back {
+  margin-left: 3vw;
+}
+
+.hidden {
+  display: none;
+}
+
+#option-button {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sml-btn {
+  min-width: 20vw;
+}

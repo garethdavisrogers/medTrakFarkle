@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="farkle.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<script async type="text/javascript" src="farkle.js"></script>
+	<title>Farkle!</title>
+</head>
+
+<body onload="initializeGame()">
+	<header class="row header">Welcome to Farkle!</header>
+	<div class="game-container">
+		<div id="rules" class="hidden">Rules go here</div>
+		<div class="round"></div>
+		<div class="turn"></div>
+		<div class="row">
+		<!-- Dice images -->
+		<div class="dice">
+			<img src="images/1.png" id="die1" data-number="0" onclick="diceClick(this)">
+			<img src="images/2.png" id="die2" data-number="1" onclick="diceClick(this)">
+			<img src="images/3.png" id="die3" data-number="2" onclick="diceClick(this)">
+			<img src="images/4.png" id="die4" data-number="3" onclick="diceClick(this)">
+			<img src="images/5.png" id="die5" data-number="4" onclick="diceClick(this)">
+			<img src="images/6.png" id="die6" data-number="5" onclick="diceClick(this)">
+		</div>
+	</div>
+	<!-- Scoring -->
+	<div class="row score"> 0 </div>
+
+	<!-- Button row -->
+	<div class-name="button-container">
+		<div id="btn-menu-1" class="row play-buttons btn-menu">
+			<button class="button roll sml-btn" onclick="rollDice()">Roll Dice</button>
+			<button class="button bank sml-btn" onclick="bankScore()">Bank Score</button>
+		</div>
+		<div id="btn-menu-2" class="row play-buttons btn-menu hidden">
+			<button class="button start-over sml-btn" onclick="startOver()">Start Over</button>
+			<button id="rules-button" class="button show-rules sml-btn" onclick="toggleRules()">The Rules</button>
+		</div>
+	</div>
+			<button id="option-button" class="button option" onclick="toggleOptions()">Options</button>
+</div>
+
+</body>
+</html>
